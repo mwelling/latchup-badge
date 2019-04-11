@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:latchup-badge-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -653,4 +654,196 @@ F 3 "" H 2450 4875 50  0001 C CNN
 	1    2450 4875
 	1    0    0    -1  
 $EndComp
+$Comp
+L Oscillator:ASE-xxxMHz X1
+U 1 1 5C9D2B97
+P 1500 3000
+F 0 "X1" H 1600 3250 50  0000 L CNN
+F 1 "ASE-12.000MHz" H 1600 2750 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm" H 2200 2650 50  0001 C CNN
+F 3 "http://www.abracon.com/Oscillators/ASV.pdf" H 1400 3000 50  0001 C CNN
+	1    1500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5C9D2EFD
+P 1500 2450
+F 0 "#PWR02" H 1500 2300 50  0001 C CNN
+F 1 "+3V3" H 1515 2623 50  0000 C CNN
+F 2 "" H 1500 2450 50  0001 C CNN
+F 3 "" H 1500 2450 50  0001 C CNN
+	1    1500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5C9D3010
+P 1500 3300
+F 0 "#PWR03" H 1500 3050 50  0001 C CNN
+F 1 "GND" H 1505 3127 50  0000 C CNN
+F 2 "" H 1500 3300 50  0001 C CNN
+F 3 "" H 1500 3300 50  0001 C CNN
+	1    1500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3000 2700 3000
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5C9D3EAB
+P 1000 2650
+F 0 "#PWR01" H 1000 2500 50  0001 C CNN
+F 1 "+3V3" H 1015 2823 50  0000 C CNN
+F 2 "" H 1000 2650 50  0001 C CNN
+F 3 "" H 1000 2650 50  0001 C CNN
+	1    1000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C9D3D19
+P 1000 2800
+F 0 "R2" V 900 2800 50  0000 C CNN
+F 1 "10K" V 1000 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 930 2800 50  0001 C CNN
+F 3 "~" H 1000 2800 50  0001 C CNN
+	1    1000 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 2950 1000 3000
+Wire Wire Line
+	1000 3000 1200 3000
+Wire Wire Line
+	1500 2700 1500 2500
+$Comp
+L Device:C_Small C14
+U 1 1 5C9D865C
+P 1725 2500
+F 0 "C14" V 1496 2500 50  0000 C CNN
+F 1 ".1uF" V 1587 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1725 2500 50  0001 C CNN
+F 3 "~" H 1725 2500 50  0001 C CNN
+	1    1725 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5C9D8663
+P 1875 2550
+F 0 "#PWR04" H 1875 2300 50  0001 C CNN
+F 1 "GND" H 1880 2377 50  0000 C CNN
+F 2 "" H 1875 2550 50  0001 C CNN
+F 3 "" H 1875 2550 50  0001 C CNN
+	1    1875 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1825 2500 1875 2500
+Wire Wire Line
+	1875 2500 1875 2550
+Wire Wire Line
+	1625 2500 1500 2500
+Connection ~ 1500 2500
+Wire Wire Line
+	1500 2500 1500 2450
+$Comp
+L Memory_Flash:M25PX32-VMW U4
+U 1 1 5C9DC00D
+P 9325 2750
+F 0 "U4" H 9966 2796 50  0000 L CNN
+F 1 "M25PX32-VMW" H 9966 2705 50  0000 L CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 9975 2800 50  0001 C CNN
+F 3 "https://www.micron.com/~/media/documents/products/data-sheet/nor-flash/serial-nor/m25px/m25px32.pdf" H 9475 2650 50  0001 C CNN
+	1    9325 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5C9DC532
+P 9325 1900
+F 0 "#PWR05" H 9325 1750 50  0001 C CNN
+F 1 "+3V3" H 9340 2073 50  0000 C CNN
+F 2 "" H 9325 1900 50  0001 C CNN
+F 3 "" H 9325 1900 50  0001 C CNN
+	1    9325 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9325 1900 9325 2000
+$Comp
+L Device:C_Small C15
+U 1 1 5C9DC539
+P 9575 2000
+F 0 "C15" V 9346 2000 50  0000 C CNN
+F 1 ".1uF" V 9437 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9575 2000 50  0001 C CNN
+F 3 "~" H 9575 2000 50  0001 C CNN
+	1    9575 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5C9DC540
+P 9725 2050
+F 0 "#PWR07" H 9725 1800 50  0001 C CNN
+F 1 "GND" H 9730 1877 50  0000 C CNN
+F 2 "" H 9725 2050 50  0001 C CNN
+F 3 "" H 9725 2050 50  0001 C CNN
+	1    9725 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9675 2000 9725 2000
+Wire Wire Line
+	9725 2000 9725 2050
+Wire Wire Line
+	9475 2000 9325 2000
+Connection ~ 9325 2000
+Wire Wire Line
+	9325 2000 9325 2250
+$Comp
+L power:GND #PWR06
+U 1 1 5C9DEBD4
+P 9325 3250
+F 0 "#PWR06" H 9325 3000 50  0001 C CNN
+F 1 "GND" H 9330 3077 50  0000 C CNN
+F 2 "" H 9325 3250 50  0001 C CNN
+F 3 "" H 9325 3250 50  0001 C CNN
+	1    9325 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3300 4050 3300
+Wire Wire Line
+	4650 3400 4050 3400
+Wire Wire Line
+	4650 3500 4050 3500
+Wire Wire Line
+	4650 3600 4050 3600
+Text Label 4075 3300 0    50   ~ 0
+ICE40_SPI_SO
+Text Label 4075 3400 0    50   ~ 0
+ICE40_SPI_SI
+Text Label 4075 3500 0    50   ~ 0
+ICE40_SPI_SCK
+Text Label 4075 3600 0    50   ~ 0
+ICE40_SPI_SS
+Wire Wire Line
+	8825 3250 8225 3250
+Wire Wire Line
+	8825 3350 8225 3350
+Wire Wire Line
+	8825 3450 8225 3450
+Wire Wire Line
+	8825 3550 8225 3550
+Text Label 8250 3250 0    50   ~ 0
+ICE40_SPI_SO
+Text Label 8250 3350 0    50   ~ 0
+ICE40_SPI_SI
+Text Label 8250 3450 0    50   ~ 0
+ICE40_SPI_SCK
+Text Label 8250 3550 0    50   ~ 0
+ICE40_SPI_SS
 $EndSCHEMATC
