@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "latchup-badge")(type "KiCad")(uri "${KIPRJMOD}/latchup-badge.pretty")(options "")(descr ""))
+)
