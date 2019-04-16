@@ -814,31 +814,23 @@ F 3 "" H 9725 3250 50  0001 C CNN
 	1    9725 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 3300 4050 3300
-Wire Wire Line
-	4650 3400 4050 3400
-Wire Wire Line
-	4650 3500 4050 3500
-Wire Wire Line
-	4650 3600 4050 3600
-Text Label 4075 3300 0    50   ~ 0
+Text Label 4000 3300 0    50   ~ 0
 ICE40_SPI_SO
-Text Label 4075 3400 0    50   ~ 0
+Text Label 4000 3400 0    50   ~ 0
 ICE40_SPI_SI
-Text Label 4075 3500 0    50   ~ 0
+Text Label 4000 3500 0    50   ~ 0
 ICE40_SPI_SCK
-Text Label 4075 3600 0    50   ~ 0
+Text Label 4000 3600 0    50   ~ 0
 ICE40_SPI_SS
 Wire Wire Line
 	10925 2550 10325 2550
-Text Label 7975 2550 0    50   ~ 0
+Text Label 7950 2550 0    50   ~ 0
 ICE40_SPI_SO
 Text Label 10350 2550 0    50   ~ 0
 ICE40_SPI_SI
-Text Label 7975 2650 0    50   ~ 0
+Text Label 7950 2650 0    50   ~ 0
 ICE40_SPI_SCK
-Text Label 7975 2750 0    50   ~ 0
+Text Label 7950 2750 0    50   ~ 0
 ICE40_SPI_SS
 $Comp
 L Connector:USB_B_Micro J1
@@ -1095,18 +1087,6 @@ Wire Wire Line
 	2700 3300 2175 3300
 Wire Wire Line
 	2700 3400 2175 3400
-Wire Wire Line
-	4650 2300 4125 2300
-Wire Wire Line
-	4650 2400 4125 2400
-Wire Wire Line
-	4650 2500 4125 2500
-Wire Wire Line
-	4650 2600 4125 2600
-Wire Wire Line
-	4650 2700 4125 2700
-Wire Wire Line
-	4650 2900 4125 2900
 Text Label 7200 4250 0    50   ~ 0
 J2_P1
 Text Label 8500 4250 0    50   ~ 0
@@ -1173,19 +1153,19 @@ Text Label 6075 3000 0    50   ~ 0
 J2_P8
 Text Label 6075 2900 0    50   ~ 0
 J3_P1
-Text Label 4125 2400 0    50   ~ 0
+Text Label 4000 2400 0    50   ~ 0
 J3_P3
-Text Label 4125 2600 0    50   ~ 0
+Text Label 4000 2600 0    50   ~ 0
 J3_P5
-Text Label 4125 2900 0    50   ~ 0
+Text Label 4000 2900 0    50   ~ 0
 J3_P7
 Text Label 6075 2700 0    50   ~ 0
 J3_P2
-Text Label 4125 2300 0    50   ~ 0
+Text Label 4000 2300 0    50   ~ 0
 J3_P4
-Text Label 4125 2500 0    50   ~ 0
+Text Label 4000 2500 0    50   ~ 0
 J3_P6
-Text Label 4125 2700 0    50   ~ 0
+Text Label 4000 2700 0    50   ~ 0
 J3_P8
 Wire Wire Line
 	2700 2900 2175 2900
@@ -1240,13 +1220,9 @@ Wire Wire Line
 	10475 4250 10675 4250
 Text Label 10675 4250 0    50   ~ 0
 CDONE
-Wire Wire Line
-	4650 3200 4125 3200
-Text Label 4125 3200 0    50   ~ 0
+Text Label 4000 3200 0    50   ~ 0
 RX
-Wire Wire Line
-	4650 3100 4125 3100
-Text Label 4125 3100 0    50   ~ 0
+Text Label 4000 3100 0    50   ~ 0
 TX
 Wire Wire Line
 	10675 4450 10475 4450
@@ -1411,4 +1387,267 @@ Wire Wire Line
 	9125 2950 8775 2950
 Wire Wire Line
 	8775 2950 8775 2200
+Wire Wire Line
+	8975 2850 7950 2850
+Connection ~ 8975 2850
+Wire Wire Line
+	8775 2950 7950 2950
+Connection ~ 8775 2950
+Text Label 7950 2850 0    50   ~ 0
+FLASH_IO2_WP
+Text Label 7950 2950 0    50   ~ 0
+FLASH_IO3_HLD
+Text Label 4000 2800 0    50   ~ 0
+FLASH_IO2_WP
+Text Label 4000 3000 0    50   ~ 0
+FLASH_IO3_HLD
+Wire Wire Line
+	4000 2300 4650 2300
+Wire Wire Line
+	4000 2400 4650 2400
+Wire Wire Line
+	4000 2500 4650 2500
+Wire Wire Line
+	4000 2600 4650 2600
+Wire Wire Line
+	4000 2700 4650 2700
+Wire Wire Line
+	4000 2800 4650 2800
+Wire Wire Line
+	4000 2900 4650 2900
+Wire Wire Line
+	4000 3000 4650 3000
+Wire Wire Line
+	4000 3100 4650 3100
+Wire Wire Line
+	4000 3200 4650 3200
+Wire Wire Line
+	4000 3300 4650 3300
+Wire Wire Line
+	4000 3400 4650 3400
+Wire Wire Line
+	4000 3500 4650 3500
+Wire Wire Line
+	4000 3600 4650 3600
+$Comp
+L Device:LED_RGB D2
+U 1 1 5CBA37B3
+P 1625 4200
+F 0 "D2" H 1625 3733 50  0000 C CNN
+F 1 "LED_RGB" H 1625 3824 50  0000 C CNN
+F 2 "latchup-badge:LED_RGB_PLLC-6" H 1625 4150 50  0001 C CNN
+F 3 "~" H 1625 4150 50  0001 C CNN
+	1    1625 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5CBA6E6D
+P 1175 4000
+F 0 "R10" V 1075 4000 50  0000 C CNN
+F 1 "330" V 1175 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1105 4000 50  0001 C CNN
+F 3 "~" H 1175 4000 50  0001 C CNN
+	1    1175 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5CBA7D75
+P 1175 4200
+F 0 "R11" V 1075 4200 50  0000 C CNN
+F 1 "330" V 1175 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1105 4200 50  0001 C CNN
+F 3 "~" H 1175 4200 50  0001 C CNN
+	1    1175 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5CBA817F
+P 1175 4400
+F 0 "R12" V 1075 4400 50  0000 C CNN
+F 1 "330" V 1175 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1105 4400 50  0001 C CNN
+F 3 "~" H 1175 4400 50  0001 C CNN
+	1    1175 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1825 4000 1925 4000
+Wire Wire Line
+	1925 4000 1925 3500
+Wire Wire Line
+	1925 3500 2700 3500
+Wire Wire Line
+	1825 4200 2000 4200
+Wire Wire Line
+	2000 4200 2000 3600
+Wire Wire Line
+	2000 3600 2700 3600
+Wire Wire Line
+	1825 4400 2075 4400
+Wire Wire Line
+	2075 4400 2075 3700
+Wire Wire Line
+	2075 3700 2700 3700
+Wire Wire Line
+	875  4400 1025 4400
+Wire Wire Line
+	1025 4200 875  4200
+Wire Wire Line
+	875  3875 875  4000
+Connection ~ 875  4200
+Wire Wire Line
+	875  4200 875  4400
+Wire Wire Line
+	1025 4000 875  4000
+Connection ~ 875  4000
+Wire Wire Line
+	875  4000 875  4200
+Wire Wire Line
+	1325 4000 1425 4000
+Wire Wire Line
+	1325 4200 1425 4200
+Wire Wire Line
+	1325 4400 1425 4400
+$Comp
+L power:+3V3 #PWR0129
+U 1 1 5CBF97A0
+P 875 3875
+F 0 "#PWR0129" H 875 3725 50  0001 C CNN
+F 1 "+3V3" H 890 4048 50  0000 C CNN
+F 2 "" H 875 3875 50  0001 C CNN
+F 3 "" H 875 3875 50  0001 C CNN
+	1    875  3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2100 2300 2100
+Wire Wire Line
+	2700 2200 2300 2200
+Text Label 2300 2100 0    50   ~ 0
+BTN_A
+Text Label 2300 2200 0    50   ~ 0
+BTN_B
+Text Label 2175 3500 0    50   ~ 0
+RGB_BLUE
+Text Label 2175 3600 0    50   ~ 0
+RGB_GREEN
+Text Label 2175 3700 0    50   ~ 0
+RGB_RED
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CC2817F
+P 1475 5750
+F 0 "SW2" H 1475 6035 50  0000 C CNN
+F 1 "SW_Push" H 1475 5944 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQQ2" H 1475 5950 50  0001 C CNN
+F 3 "~" H 1475 5950 50  0001 C CNN
+	1    1475 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CC28CC0
+P 1450 6500
+F 0 "SW1" H 1450 6785 50  0000 C CNN
+F 1 "SW_Push" H 1450 6694 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQQ2" H 1450 6700 50  0001 C CNN
+F 3 "~" H 1450 6700 50  0001 C CNN
+	1    1450 6500
+	1    0    0    -1  
+$EndComp
+Text Label 1825 5750 0    50   ~ 0
+BTN_A
+Text Label 1800 6500 0    50   ~ 0
+BTN_B
+$Comp
+L power:+3V3 #PWR025
+U 1 1 5CC2982A
+P 1750 5350
+F 0 "#PWR025" H 1750 5200 50  0001 C CNN
+F 1 "+3V3" H 1765 5523 50  0000 C CNN
+F 2 "" H 1750 5350 50  0001 C CNN
+F 3 "" H 1750 5350 50  0001 C CNN
+	1    1750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5CC2A43A
+P 1750 5500
+F 0 "R14" V 1650 5500 50  0000 C CNN
+F 1 "10K" V 1750 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1680 5500 50  0001 C CNN
+F 3 "~" H 1750 5500 50  0001 C CNN
+	1    1750 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR024
+U 1 1 5CC2D5F4
+P 1725 6100
+F 0 "#PWR024" H 1725 5950 50  0001 C CNN
+F 1 "+3V3" H 1740 6273 50  0000 C CNN
+F 2 "" H 1725 6100 50  0001 C CNN
+F 3 "" H 1725 6100 50  0001 C CNN
+	1    1725 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5CC2D5FE
+P 1725 6250
+F 0 "R13" V 1625 6250 50  0000 C CNN
+F 1 "10K" V 1725 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1655 6250 50  0001 C CNN
+F 3 "~" H 1725 6250 50  0001 C CNN
+	1    1725 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 6500 1725 6500
+Wire Wire Line
+	1725 6400 1725 6500
+Connection ~ 1725 6500
+Wire Wire Line
+	1725 6500 1800 6500
+Wire Wire Line
+	1825 5750 1750 5750
+Wire Wire Line
+	1750 5650 1750 5750
+Connection ~ 1750 5750
+Wire Wire Line
+	1750 5750 1675 5750
+$Comp
+L power:GND #PWR022
+U 1 1 5CC3703F
+P 1125 6600
+F 0 "#PWR022" H 1125 6350 50  0001 C CNN
+F 1 "GND" H 1130 6427 50  0000 C CNN
+F 2 "" H 1125 6600 50  0001 C CNN
+F 3 "" H 1125 6600 50  0001 C CNN
+	1    1125 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6500 1125 6500
+Wire Wire Line
+	1125 6500 1125 6600
+$Comp
+L power:GND #PWR023
+U 1 1 5CC387FF
+P 1150 5850
+F 0 "#PWR023" H 1150 5600 50  0001 C CNN
+F 1 "GND" H 1155 5677 50  0000 C CNN
+F 2 "" H 1150 5850 50  0001 C CNN
+F 3 "" H 1150 5850 50  0001 C CNN
+	1    1150 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1275 5750 1150 5750
+Wire Wire Line
+	1150 5750 1150 5850
 $EndSCHEMATC
