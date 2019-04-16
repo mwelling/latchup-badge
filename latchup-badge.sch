@@ -1260,10 +1260,6 @@ Wire Wire Line
 	10475 4650 10600 4650
 Wire Wire Line
 	10600 4650 10600 4750
-Text Notes 10050 5600 0    50   ~ 0
-ADD RGB
-Text Notes 9975 5775 0    50   ~ 0
-ADD BUTTONS
 $Comp
 L power:+5V #PWR021
 U 1 1 5CED7437
