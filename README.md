@@ -1,3 +1,3 @@
-# LATCH-UP 2019 Badge (Unoffical)
+# LATCH-UP 2019 Badge (Unofficial)
 ![LATCHUP](latchup-badge.png)
 ![LATCHUP](latchup-badge-back.png)
