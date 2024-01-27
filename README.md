@@ -1,3 +1,3 @@
-# LATCH-UP 2019 Badge (Unofficial)
+# Fossi LATCH-UP Badge (Unofficial)
 ![LATCHUP](latchup-badge.png)
 ![LATCHUP](latchup-badge-back.png)
