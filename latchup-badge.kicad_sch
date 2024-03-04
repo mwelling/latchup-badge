@@ -4765,7 +4765,7 @@
     (uuid 3247ef77-07f5-4edb-8ad9-281bf3ceaa42)
     (property "Reference" "U5" (id 0) (at 264.16 92.71 0))
     (property "Value" "LY68L6400" (id 1) (at 267.97 95.25 0))
-    (property "Footprint" "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm" (id 2) (at 266.7 92.71 0)
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (id 2) (at 266.7 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.micron.com/~/media/documents/products/data-sheet/nor-flash/serial-nor/m25px/m25px32.pdf" (id 3) (at 254 96.52 0)
@@ -5216,7 +5216,7 @@
       (reference "U4") (unit 1) (value "M25PX32-VMW") (footprint "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm")
     )
     (path "/3247ef77-07f5-4edb-8ad9-281bf3ceaa42"
-      (reference "U5") (unit 1) (value "LY68L6400") (footprint "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm")
+      (reference "U5") (unit 1) (value "LY68L6400") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00005c9d2b97"
       (reference "X1") (unit 1) (value "ASE-12.000MHz") (footprint "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm")
